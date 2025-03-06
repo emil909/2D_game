@@ -1,6 +1,5 @@
 # Simple 2D Obstacle Game
 This is a small 2D game built in Unity using C#. The goal is to control a bouncing ball and avoid obstacles while scoring points.
-https://github.com/emil909/2D_game/releases/tag/Release
 
 ![Image](https://github.com/user-attachments/assets/78e43aa1-907b-412d-8ba7-64b0898d8860)
 
