@@ -22,7 +22,7 @@ public class ObstucleCollision : MonoBehaviour
     {
         if(collision.gameObject.tag == "Obstucle") 
         {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(2);
         }
     }
 }

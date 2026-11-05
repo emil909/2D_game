@@ -1,6 +1,6 @@
 using UnityEngine;
 using System.IO;
-using TMPro; // Add this namespace
+using TMPro;
 
 public class ScoreScript : MonoBehaviour
 {
@@ -13,8 +13,7 @@ public class ScoreScript : MonoBehaviour
     {
         filePath = Application.dataPath + "/score.txt";
         Debug.Log(score);
-        scoreObject.GetComponent<TextMeshProUGUI>().text = "Score: " + score; // Change to TextMeshProUGUI
-
+        scoreObject.GetComponent<TextMeshProUGUI>().text = "Score: " + score;
     }
 
     void Update()
@@ -28,12 +27,13 @@ public class ScoreScript : MonoBehaviour
         {
             score++;
             Debug.Log(score);
-            scoreObject.GetComponent<TextMeshProUGUI>().text = "Score: " + score; // Change to TextMeshProUGUI
+            scoreObject.GetComponent<TextMeshProUGUI>().text = "Score: " + score;
             WriteScoreToFile();
+            PlayerPrefs.SetInt("Score", score); // Save the score to PlayerPrefs
         }
     }
 
-    void WriteScoreToFile()
+    public void WriteScoreToFile()
     {
         File.WriteAllText(filePath, "Score: " + score);
     }

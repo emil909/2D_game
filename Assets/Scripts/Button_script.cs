@@ -18,6 +18,6 @@ public class Button_script : MonoBehaviour
     // Method to load a new scene
     public void LoadNewScene()
     {
-        SceneManager.LoadScene(0); // Replace "NewSceneName" with the actual name of the scene you want to load
+        SceneManager.LoadScene(1); // Replace "NewSceneName" with the actual name of the scene you want to load
     }
 }

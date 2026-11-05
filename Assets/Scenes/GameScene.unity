@@ -771,7 +771,7 @@ Transform:
   m_GameObject: {fileID: 511604899}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.37, y: -2.55, z: 0}
+  m_LocalPosition: {x: 3.37, y: -2.41, z: 0}
   m_LocalScale: {x: 1, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -981,7 +981,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 3.1175344}
+  m_Offset: {x: 0.38331413, y: 3.1175344}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -991,7 +991,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 7.2350717}
+  m_Size: {x: 0.23337173, y: 7.2350717}
   m_EdgeRadius: 0
 --- !u!1 &619394800
 GameObject:
@@ -1359,7 +1359,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 3.1175344}
+  m_Offset: {x: 0.37348557, y: 3.1175344}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1369,7 +1369,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 7.2350717}
+  m_Size: {x: 0.25302887, y: 7.2350717}
   m_EdgeRadius: 0
 --- !u!1 &1079865843
 GameObject:
@@ -1767,10 +1767,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obstaclePrefab:
   - {fileID: 203808556}
-  - {fileID: 511604899}
-  - {fileID: 1079865843}
-  - {fileID: 1967813716}
-  spawnIntervalSeconds: 3
+  initialSpawnInterval: 1
+  subsequentSpawnInterval: 3
   spawnX: 15
   speedIncrease: 0.1
 --- !u!4 &1855902117
